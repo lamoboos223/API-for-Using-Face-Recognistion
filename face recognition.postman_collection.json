@@ -1,0 +1,60 @@
+{
+	"info": {
+		"_postman_id": "6ce3c618-927b-4141-8b38-3ccc4b0791f8",
+		"name": "face recognition",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/Images",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name1",
+							"value": "jennie1.jpg",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "name2",
+							"value": "rihanna.jpg",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "name2",
+							"value": "jennie2.jpg",
+							"description": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/Images",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"Images"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
